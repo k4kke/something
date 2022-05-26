@@ -5,16 +5,16 @@ import requests
 from bs4 import BeautifulSoup
 import weatherdef
 import prac
-
+#tweet内容(適宜入力)
 text = prac.Weather() 
-#開きたいサイト
-url = "https://twitter.com/login?lang=ja"
+#TwitterログインページURL
+url = ""
 #各種情報の入力
 user_name = ''
 pass_word = ''
 #chromedriverの設定
 driver = webdriver.Chrome(executable_path=r"C:\Users\setsuhamu\OneDrive\デスクトップ\python st\study\chromedriver.exe")
-#カレントウインドウを最大化する
+#カレントウインドウを最大化する(ヘッドレス推奨)
 driver.maximize_window()
 time.sleep(3)
 #上で指定したサイトを開く
